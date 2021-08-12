@@ -1,0 +1,43 @@
+body {
+    background-color: black;
+}
+
+.container-fluid {
+    padding-left: 3%;
+}
+
+.tech-card {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 10px 20px 50px rgb(8, 5, 24);
+  transition: box-shadow 0.5s;
+  will-change: transform;
+  border-radius: 3%;
+}
+
+img {
+    width: 80%;
+    height: 80%;
+    margin: 10%;
+    margin-top: 40px;
+}
+
+@media only screen and (max-width: 500px) {
+    .container-fluid{
+        margin-left: 5%;
+    }
+
+    .tech-card {
+        margin: 1%;
+        margin-top: 1%;
+        padding: 3%;
+    }
+
+    img {
+        width: 80%;
+        height: 70%;
+        margin-top: 10%;
+    }
+}
